@@ -1,0 +1,130 @@
+# Hexo Fluid 主题配置
+# 文档: https://hexo.fluid-dev.com/docs/guide/
+
+# 全局
+favicon: /img/favicon.png
+
+# 页面导航
+navbar:
+  blog_title: Nyima
+  menu:
+    - { key: "首页", link: "/", icon: "iconfont icon-home-fill" }
+    - { key: "归档", link: "/archives/", icon: "iconfont icon-archive-fill" }
+    - { key: "分类", link: "/categories/", icon: "iconfont icon-category-fill" }
+    - { key: "标签", link: "/tags/", icon: "iconfont icon-tags-fill" }
+    - { key: "关于", link: "/about/", icon: "iconfont icon-user-fill" }
+
+# 首页
+index:
+  banner_img: /img/default.png
+  banner_mask_alpha: 0.3
+  slogan:
+    text: "Nyima's Blog"
+    typing: true
+  post_default_img:
+    - https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.9.4/source/img/default.png
+
+# 文章页
+post:
+  banner_img: /img/default.png
+  banner_mask_alpha: 0.3
+  meta:
+    date: true
+    updated: true
+    categories: true
+    tags: true
+  word_count: true
+  reading_time: true
+  copyright:
+    enable: true
+    license: "CC BY-NC-SA 4.0"
+    license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+
+# 归档页
+archive:
+  banner_img: /img/default.png
+  banner_mask_alpha: 0.3
+
+# 分类页
+category:
+  banner_img: /img/default.png
+  banner_mask_alpha: 0.3
+
+# 标签页
+tag:
+  banner_img: /img/default.png
+  banner_mask_alpha: 0.3
+
+# 关于页
+about:
+  banner_img: /img/default.png
+  banner_mask_alpha: 0.3
+  name: Nyima
+  avatar: /img/avatar.png
+  intro: "一个热爱技术的开发者"
+  icons:
+    - { class: "iconfont icon-github-fill", link: "https://github.com/yourusername", tip: "GitHub" }
+
+# 侧边栏
+sidebar:
+  position: left
+  card_archives:
+    enable: true
+    type: 'monthly'
+    limit: 12
+  card_categories:
+    enable: true
+    limit: 8
+    order: -count
+  card_tags:
+    enable: true
+    limit: 20
+    order: -count
+  card_recent_post:
+    enable: true
+    limit: 5
+
+# 搜索
+search:
+  enable: true
+  type: local
+  content: true
+  preload: true
+  max_results: 10
+
+# 深色模式
+dark_mode:
+  enable: true
+  default: auto
+
+# 代码高亮
+highlight:
+  theme: github-gist
+  highlightjs: true
+  prismjs: false
+  copy_btn: true
+
+# 字数统计
+wordcount:
+  enable: true
+
+# 评论 (可选，取消注释以启用)
+# comments:
+#   type: disqus
+#   shortname: your-disqus-shortname
+
+# 页脚
+footer:
+  content: '
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+  '
+
+# 统计
+web_analytics:
+  enable: false
+  # busuanzi:
+  #   enable: true
+  # google:
+  #   id: G-XXXXXXXXXX
